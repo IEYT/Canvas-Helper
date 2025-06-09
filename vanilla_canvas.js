@@ -1,11 +1,11 @@
-export function drawer(fillstyle, ...fill) {
+function drawer(fillstyle, ...fill) {
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   ctx.fillStyle = fillstyle;
   ctx.fillRect(...fill);
 }
 
-export function drawImageBulk(
+function drawImageBulk(
   Mode,
   Times,
   Delay,
